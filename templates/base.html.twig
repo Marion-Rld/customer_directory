@@ -11,6 +11,14 @@
 {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="{{ path('app_customer_index') }}">Clients</a></li>
+                <li><a href="{{ path('app_company_index') }}">Entreprises</a></li>
+            </ul>
+        </nav>
+    </header>
     <body>
         {% block body %}{% endblock %}
     </body>
